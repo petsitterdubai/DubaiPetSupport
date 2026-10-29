@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Learn about Dubai Pet Support, the UAE's most trusted 24/7 pet care, sitting, and boarding service provider.">
+    <title>About Us | Dubai Pet Support</title>
+    <!-- Reuse the exact same <style> block from index.html here for consistency -->
+    <style>
+        :root { --primary: #FF6B35; --secondary: #004E89; --light: #F7F9FC; --dark: #1A1A2E; --text: #333333; --white: #FFFFFF; }
+        * { box-sizing: border-box; margin: 0; padding: 0; }
+        body { font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; line-height: 1.6; color: var(--text); background: var(--light); }
+        a { text-decoration: none; color: inherit; transition: 0.3s; }
+        .container { max-width: 1200px; margin: 0 auto; padding: 0 20px; }
+        .top-bar { background: var(--secondary); color: var(--white); padding: 10px 0; font-size: 0.9rem; }
+        .top-bar .container { display: flex; justify-content: space-between; flex-wrap: wrap; gap: 10px; }
+        .top-bar a { color: var(--white); margin-left: 15px; }
+        header { background: var(--white); box-shadow: 0 2px 10px rgba(0,0,0,0.1); position: sticky; top: 0; z-index: 1000; }
+        header .container { display: flex; justify-content: space-between; align-items: center; padding: 15px 20px; }
+        .logo { font-size: 1.8rem; font-weight: 800; color: var(--secondary); }
+        .logo span { color: var(--primary); }
+        nav ul { display: flex; list-style: none; gap: 25px; }
+        nav a { font-weight: 600; color: var(--dark); }
+        nav a:hover, nav a.active { color: var(--primary); }
+        .page-hero { background: var(--secondary); color: var(--white); padding: 60px 0; text-align: center; }
+        .page-hero h1 { font-size: 2.5rem; margin-bottom: 10px; }
+        section { padding: 80px 0; }
+        .content-block { background: var(--white); padding: 40px; border-radius: 10px; box-shadow: 0 5px 15px rgba(0,0,0,0.05); margin-bottom: 30px; }
+        .content-block h2 { color: var(--secondary); margin-bottom: 20px; }
+        .btn { display: inline-block; background: var(--primary); color: var(--white); padding: 14px 35px; border-radius: 50px; font-weight: 700; text-transform: uppercase; letter-spacing: 1px; }
+        .btn:hover { background: #e55a2b; transform: translateY(-2px); }
+        footer { background: var(--dark); color: #aaa; padding: 60px 0 20px; }
+        .footer-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); gap: 40px; margin-bottom: 40px; }
+        footer h4 { color: var(--white); margin-bottom: 20px; font-size: 1.2rem; }
+        footer ul { list-style: none; }
+        footer ul li { margin-bottom: 10px; }
+        footer a { color: #aaa; }
+        footer a:hover { color: var(--primary); }
+        .copyright { text-align: center; border-top: 1px solid #333; padding-top: 20px; font-size: 0.9rem; }
+        @media (max-width: 768px) {
+            header .container { flex-direction: column; gap: 15px; }
+            nav ul { flex-wrap: wrap; justify-content: center; }
+        }
+    </style>
+</head>
+<body>
+    <div class="top-bar">
+        <div class="container">
+            <span>📞 +971 50 903 8225 | ✉️ tomdaloand@gmail.com | 🕒 Mon - Sun: Open 24 Hours</span>
+        </div>
+    </div>
+    <header>
+        <div class="container">
+            <a href="index.html" class="logo">Dubai <span>Pet Support</span></a>
+            <nav>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="about.html" class="active">About Us</a></li>
+                    <li><a href="services.html">Services</a></li>
+                    <li><a href="contact.html">Contact Us</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <div class="page-hero">
+        <div class="container">
+            <h1>About Dubai Pet Support</h1>
+            <p>Your Trusted Pet Care Partner in the United Arab Emirates</p>
+        </div>
+    </div>
+
+    <section>
+        <div class="container">
+            <div class="content-block">
+                <h2>Our Mission</h2>
+                <p>At <strong>Dubai Pet Support</strong>, we believe that every pet deserves exceptional care, love, and attention. Founded with a deep passion for animal welfare, our mission is to provide peace of mind to pet owners across Dubai and the wider UAE. We understand that your pets are not just animals; they are cherished family members. That is why we have built a team of dedicated, background-checked, and highly trained pet care professionals who treat your pets as if they were their own.</p>
+            </div>
+            <div class="content-block">
+                <h2>Why Choose Us?</h2>
+                <ul style="margin-left: 20px; line-height: 2;">
+                    <li><strong>24/7 Availability:</strong> Pets don't keep office hours, and neither do we. Our services are available around the clock, 365 days a year.</li>
+                    <li><strong>UAE-Wide Coverage:</strong> Based in Dubai, we proudly extend our premium pet sitting, boarding, and walking services to all emirates.</li>
+                    <li><strong>Tailored Care Plans:</strong> No two pets are alike. We customize feeding, exercise, and medication routines to match your pet's exact needs.</li>
+                    <li><strong>Transparent Communication:</strong> Receive real-time photo and video updates during every visit, so you never have to wonder how your pet is doing.</li>
+                </ul>
+            </div>
+            <div style="text-align: center; margin-top: 40px;">
+                <a href="services.html" class="btn">Explore Our Services</a>
+                <a href="contact.html" class="btn" style="background: var(--secondary); margin-left: 15px;">Contact Us Today</a>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <div class="container">
+            <div class="footer-grid">
+                <div>
+                    <h4>Dubai Pet Support</h4>
+                    <p>We are based in Dubai and provide services all over United Arab Emirates.</p>
+                </div>
+                <div>
+                    <h4>Quick Links</h4>
+                    <ul>
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="about.html">About Us</a></li>
+                        <li><a href="services.html">Our Services</a></li>
+                        <li><a href="contact.html">Contact Us</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h4>Contact Info</h4>
+                    <ul>
+                        <li>📞 +971 50 903 8225</li>
+                        <li>✉️ tomdaloand@gmail.com</li>
+                        <li>🕒 Mon - Sun: Open 24 Hours</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="copyright">
+                <p>&copy; 2026 Dubai Pet Support. All Rights Reserved.</p>
+            </div>
+        </div>
+    </footer>
+</body>
+</html>

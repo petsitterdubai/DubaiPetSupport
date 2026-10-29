@@ -1,0 +1,239 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Dubai Pet Support offers trusted, 24/7 pet sitting, dog walking, and pet boarding services across Dubai and the UAE. Book your free consultation today.">
+    <title>Dubai Pet Support | Trusted Pet Care & Sitting Services UAE</title>
+    <style>
+        :root { --primary: #FF6B35; --secondary: #004E89; --light: #F7F9FC; --dark: #1A1A2E; --text: #333333; --white: #FFFFFF; }
+        * { box-sizing: border-box; margin: 0; padding: 0; }
+        body { font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; line-height: 1.6; color: var(--text); background: var(--light); }
+        a { text-decoration: none; color: inherit; transition: 0.3s; }
+        .container { max-width: 1200px; margin: 0 auto; padding: 0 20px; }
+        .top-bar { background: var(--secondary); color: var(--white); padding: 10px 0; font-size: 0.9rem; }
+        .top-bar .container { display: flex; justify-content: space-between; flex-wrap: wrap; gap: 10px; }
+        .top-bar a { color: var(--white); margin-left: 15px; }
+        header { background: var(--white); box-shadow: 0 2px 10px rgba(0,0,0,0.1); position: sticky; top: 0; z-index: 1000; }
+        header .container { display: flex; justify-content: space-between; align-items: center; padding: 15px 20px; }
+        .logo { font-size: 1.8rem; font-weight: 800; color: var(--secondary); }
+        .logo span { color: var(--primary); }
+        nav ul { display: flex; list-style: none; gap: 25px; }
+        nav a { font-weight: 600; color: var(--dark); }
+        nav a:hover, nav a.active { color: var(--primary); }
+        .hero { background: linear-gradient(rgba(0,78,137,0.85), rgba(0,78,137,0.85)), url('https://images.unsplash.com/photo-1450778869180-41d0601e046e?auto=format&fit=crop&w=1920&q=80'); background-size: cover; background-position: center; color: var(--white); padding: 100px 0; text-align: center; }
+        .hero h1 { font-size: 3rem; margin-bottom: 20px; }
+        .hero p { font-size: 1.2rem; margin-bottom: 30px; max-width: 700px; margin-left: auto; margin-right: auto; }
+        .btn { display: inline-block; background: var(--primary); color: var(--white); padding: 14px 35px; border-radius: 50px; font-weight: 700; text-transform: uppercase; letter-spacing: 1px; }
+        .btn:hover { background: #e55a2b; transform: translateY(-2px); }
+        .badges { display: flex; justify-content: center; gap: 30px; flex-wrap: wrap; margin-top: -40px; position: relative; z-index: 10; }
+        .badge { background: var(--white); padding: 20px 30px; border-radius: 10px; box-shadow: 0 5px 15px rgba(0,0,0,0.1); text-align: center; font-weight: 700; color: var(--secondary); min-width: 200px; }
+        section { padding: 80px 0; }
+        .section-title { text-align: center; margin-bottom: 50px; }
+        .section-title h2 { font-size: 2.5rem; color: var(--secondary); margin-bottom: 15px; }
+        .section-title p { color: #666; max-width: 600px; margin: 0 auto; }
+        .services-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); gap: 30px; }
+        .service-card { background: var(--white); padding: 30px; border-radius: 10px; box-shadow: 0 5px 15px rgba(0,0,0,0.05); transition: 0.3s; border-top: 4px solid var(--primary); }
+        .service-card:hover { transform: translateY(-5px); box-shadow: 0 10px 25px rgba(0,0,0,0.1); }
+        .service-card h3 { color: var(--secondary); margin-bottom: 15px; font-size: 1.4rem; }
+        .service-card a { color: var(--primary); font-weight: 700; display: inline-flex; align-items: center; margin-top: 15px; }
+        .steps { display: flex; justify-content: space-between; gap: 30px; flex-wrap: wrap; }
+        .step { flex: 1; min-width: 250px; text-align: center; background: var(--white); padding: 40px 20px; border-radius: 10px; }
+        .step-number { background: var(--primary); color: var(--white); width: 50px; height: 50px; border-radius: 50%; display: flex; align-items: center; justify-content: center; font-size: 1.5rem; font-weight: 800; margin: 0 auto 20px; }
+        .testimonials { background: var(--secondary); color: var(--white); }
+        .testimonials .section-title h2 { color: var(--white); }
+        .testimonials .section-title p { color: #ccc; }
+        .testimonial-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 30px; }
+        .testimonial { background: rgba(255,255,255,0.1); padding: 30px; border-radius: 10px; }
+        .testimonial .stars { color: #FFD700; margin-bottom: 15px; }
+        .testimonial p { font-style: italic; margin-bottom: 15px; }
+        .testimonial strong { color: var(--primary); }
+        footer { background: var(--dark); color: #aaa; padding: 60px 0 20px; }
+        .footer-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); gap: 40px; margin-bottom: 40px; }
+        footer h4 { color: var(--white); margin-bottom: 20px; font-size: 1.2rem; }
+        footer ul { list-style: none; }
+        footer ul li { margin-bottom: 10px; }
+        footer a { color: #aaa; }
+        footer a:hover { color: var(--primary); }
+        .copyright { text-align: center; border-top: 1px solid #333; padding-top: 20px; font-size: 0.9rem; }
+        @media (max-width: 768px) {
+            .hero h1 { font-size: 2rem; }
+            header .container { flex-direction: column; gap: 15px; }
+            nav ul { flex-wrap: wrap; justify-content: center; }
+        }
+    </style>
+</head>
+<body>
+    <div class="top-bar">
+        <div class="container">
+            <span>📞 +971 50 903 8225 | ✉️ tomdaloand@gmail.com | 🕒 Mon - Sun: Open 24 Hours</span>
+        </div>
+    </div>
+    <header>
+        <div class="container">
+            <a href="index.html" class="logo">Dubai <span>Pet Support</span></a>
+            <nav>
+                <ul>
+                    <li><a href="index.html" class="active">Home</a></li>
+                    <li><a href="about.html">About Us</a></li>
+                    <li><a href="services.html">Services</a></li>
+                    <li><a href="contact.html">Contact Us</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <section class="hero">
+        <div class="container">
+            <h1>Protect Your Pets, Give Them the Love They Deserve</h1>
+            <p>Trusted pet care services in Dubai — <a href="https://www.google.com/maps?cid=1295278282866136295"><strong>Pet Sitting</strong></a>, Dog Walking, Cat & Dog Boarding done right, with 24/7 availability and compassionate care.</p>
+            <a href="contact.html" class="btn">Book a Free Consultation</a>
+        </div>
+    </section>
+
+    <div class="container">
+        <div class="badges">
+            <div class="badge">✅ 24/7 Availability</div>
+            <div class="badge">🛡️ Fully Insured & Vetted</div>
+            <div class="badge">🇦🇪 UAE-Wide Service</div>
+            <div class="badge">⭐ 5-Star Rated Care</div>
+        </div>
+    </div>
+
+    <section>
+        <div class="container">
+            <div class="section-title">
+                <h2>You Can Trust Dubai Pet Support</h2>
+                <p>We know your pets are family. We provide peace of mind through professional, loving, and reliable pet care across the UAE.</p>
+            </div>
+            <div style="text-align: center; max-width: 800px; margin: 0 auto;">
+                <ul style="list-style: none; text-align: left; display: inline-block;">
+                    <li style="margin-bottom: 15px;">✔️ Background-checked and trained pet guardians</li>
+                    <li style="margin-bottom: 15px;">✔️ Customized care plans for every breed and temperament</li>
+                    <li style="margin-bottom: 15px;">✔️ Real-time photo and video updates during visits</li>
+                    <li style="margin-bottom: 15px;">✔️ Serving all communities across Dubai and the UAE</li>
+                </ul>
+                <br><br>
+                <a href="about.html" class="btn">Learn More About Us</a>
+            </div>
+        </div>
+    </section>
+
+    <section style="background: var(--white);">
+        <div class="container">
+            <div class="section-title">
+                <h2>3 Simple Steps to Peace of Mind</h2>
+            </div>
+            <div class="steps">
+                <div class="step">
+                    <div class="step-number">1</div>
+                    <h3>Book a Free Meet & Greet</h3>
+                    <p>We assess your pet's needs, discuss routines, and ensure a perfect match with your dedicated pet guardian.</p>
+                </div>
+                <div class="step">
+                    <div class="step-number">2</div>
+                    <h3>We Provide Tailored Care</h3>
+                    <p>Your pet receives personalized attention, feeding, playtime, and updates while you are away.</p>
+                </div>
+                <div class="step">
+                    <div class="step-number">3</div>
+                    <h3>Enjoy Total Peace of Mind</h3>
+                    <p>Relax knowing your furry family member is safe, happy, and loved by a trusted professional.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section>
+        <div class="container">
+            <div class="section-title">
+                <h2>Our Premium Pet Care Services</h2>
+                <p>Comprehensive care solutions tailored to your pet's unique needs.</p>
+            </div>
+            <div class="services-grid">
+                <div class="service-card">
+                    <h3>Pet Sitter Dubai</h3>
+                    <p>Compassionate in-home care for all types of pets, ensuring they stay comfortable in their familiar environment.</p>
+                    <a href="services.html#pet-sitter">Learn More →</a>
+                </div>
+                <div class="service-card">
+                    <h3>Dog Walking Dubai</h3>
+                    <p>Energetic, GPS-tracked daily walks to keep your canine companion healthy, happy, and well-socialized.</p>
+                    <a href="services.html#dog-walking">Learn More →</a>
+                </div>
+                <div class="service-card">
+                    <h3>Cat Boarding Dubai</h3>
+                    <p>Safe, clean, and stimulating boarding facilities designed specifically for feline comfort and well-being.</p>
+                    <a href="services.html#cat-boarding">Learn More →</a>
+                </div>
+                <div class="service-card">
+                    <h3>Dog Boarding Dubai</h3>
+                    <p>Spacious, fun, and supervised overnight stays for dogs, complete with playtime and personalized attention.</p>
+                    <a href="services.html#dog-boarding">Learn More →</a>
+                </div>
+            </div>
+            <div style="text-align: center; margin-top: 40px;">
+                <a href="services.html" class="btn">View All Services</a>
+            </div>
+        </div>
+    </section>
+
+    <section class="testimonials">
+        <div class="container">
+            <div class="section-title">
+                <h2>What Pet Parents Say</h2>
+                <p>Real reviews from our satisfied clients across the UAE.</p>
+            </div>
+            <div class="testimonial-grid">
+                <div class="testimonial">
+                    <div class="stars">★★★★★</div>
+                    <p>"Dubai Pet Support is a lifesaver! Their dog walking service is incredibly reliable, and I love getting photo updates during my workday. Highly recommended!"</p>
+                    <strong>— Sarah M., Dubai Marina</strong>
+                </div>
+                <div class="testimonial">
+                    <div class="stars">★★★★★</div>
+                    <p>"We used their cat sitting service for a week-long trip. Our cat was stress-free, and the house was kept immaculate. Truly professional and caring."</p>
+                    <strong>— Ahmed K., Arabian Ranches</strong>
+                </div>
+                <div class="testimonial">
+                    <div class="stars">★★★★★</div>
+                    <p>"The best dog boarding experience we've had in the UAE. Our pup came home happy and tired from all the fun. We will definitely be returning customers."</p>
+                    <strong>— Elena R., Jumeirah</strong>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <div class="container">
+            <div class="footer-grid">
+                <div>
+                    <h4>Dubai Pet Support</h4>
+                    <p>We are based in Dubai and provide services all over United Arab Emirates. Your trusted partner for 24/7 professional pet care.</p>
+                </div>
+                <div>
+                    <h4>Quick Links</h4>
+                    <ul>
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="about.html">About Us</a></li>
+                        <li><a href="services.html">Our Services</a></li>
+                        <li><a href="contact.html">Contact Us</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h4>Contact Info</h4>
+                    <ul>
+                        <li>📞 +971 50 903 8225</li>
+                        <li>✉️ tomdaloand@gmail.com</li>
+                        <li>🕒 Mon - Sun: Open 24 Hours</li>
+                        <li>📍 Dubai, United Arab Emirates</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="copyright">
+                <p>&copy; 2026 Dubai Pet Support. All Rights Reserved.</p>
+            </div>
+        </div>
+    </footer>
+</body>
+</html>
